@@ -6,7 +6,14 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	input = in;
 
 	// initialise game objects
-
+	beachBall.loadFromFile("gfx/Beach_Ball.png");
+	ballDude.setTexture(&beachBall);
+	ballDude.setSize(sf::Vector2f(100, 100));
+	ballDude.setPosition(500, 100);
+	ballDude.setVelocity(500.0, 500.0);
+	ballDude.setInput(input);
+	speedx = 500;
+	speedy = 500;
 }
 
 Level::~Level()
@@ -17,12 +24,14 @@ Level::~Level()
 // handle user input
 void Level::handleInput(float dt)
 {
-
+	// Input dt stuff
+	ballDude.handleInput(dt);
 }
 
 // Update game objects
 void Level::update(float dt)
 {
+	ballDude.update(dt);		// Updates ballDude, each game loop
 
 }
 
@@ -30,7 +39,7 @@ void Level::update(float dt)
 void Level::render()
 {
 	beginDraw();
-
+	window->draw(ballDude);
 	endDraw();
 }
 

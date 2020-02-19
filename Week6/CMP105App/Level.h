@@ -2,8 +2,10 @@
 
 #include <SFML/Graphics.hpp>
 #include "Framework/Input.h"
+#include "Framework/GameObject.h"
 #include <string.h>
 #include <iostream>
+#include "GravityObject.h"
 
 
 class Level{
@@ -17,7 +19,7 @@ public:
 
 private:
 	// Default functions for rendering to the screen.
-	void beginDraw();
+	void beginDraw(); 
 	void endDraw();
 
 	// Default variables for level class.
@@ -25,4 +27,14 @@ private:
 	Input* input;
 
 	// More level variables
+
+	//SPEEEEEEEEEEEEEEEEEEEEEEEEEEEED (speed)
+	float speedx;
+	float speedy;
+
+	// Created actors
+	GravityObject ballDude;
+
+	// Textures
+	sf::Texture beachBall;
 };
