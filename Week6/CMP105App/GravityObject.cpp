@@ -15,41 +15,41 @@ GravityObject::GravityObject()
 	setTextureRect(currentAnimation->getCurrentFrame());
 	
 	//I have no clue as to why this is the syntax written in the slide rip life
-	speed = 50.f;
+	//speed = 50.f;
 
 
 	// Apply gravity force, increasing velocity
 	// Move shape by new velocity
-	sf::Vector2f pos = stepVelocity * dt * 0.5f gravity *dt*dt;		// ut + 1 / 2at ^ 2
-		stepVelocity gravity dt; // v = u + at note the += is not
-	setPosition getPosition() pos
-		// Check for collision with bottom of window
-		if
-			getPosition().y >=
-		{
-			setPosition
-				getPosition().x,
-				stepVelocity
-				= Vector2f(0,
-		}
+	//sf::Vector2f pos = stepVelocity * dt * 0.5f gravity *dt*dt;		// ut + 1 / 2at ^ 2
+	//	stepVelocity gravity dt; // v = u + at note the += is not
+	//setPosition getPosition() pos
+	//	// Check for collision with bottom of window
+	//	if
+	//		getPosition().y >=
+	//	{
+	//		setPosition
+	//			getPosition().x,
+	//			stepVelocity
+	//			= Vector2f(0,
+	//	}
 }
 
 
-Vector
-
-void GravityObject::handleInput(float dt)
-{
-	if (input->isKeyDown(sf::Keyboard::Right))
-	{
-		move(sf::Vector2f(velocity.x, 0) * dt);
-	}
-
-	if (input->isKeyDown(sf::Keyboard::Left))
-	{
-		move(sf::Vector2f(-velocity.x, 0) * dt);
-	}
-
-};
+//Vector
+//
+//void GravityObject::handleInput(float dt)
+//{
+//	if (input->isKeyDown(sf::Keyboard::Right))
+//	{
+//		move(sf::Vector2f(velocity.x, 0) * dt);
+//	}
+//
+//	if (input->isKeyDown(sf::Keyboard::Left))
+//	{
+//		move(sf::Vector2f(-velocity.x, 0) * dt);
+//	}
+//
+//};
 
 
 
@@ -78,7 +78,9 @@ void GravityObject::update(float dt)
 	//	currentAnimation = &wait;
 	//	setTextureRect(currentAnimation->getCurrentFrame());
 	//}
+}
 
-
+void handleInput(float dt)
+{
 
 }

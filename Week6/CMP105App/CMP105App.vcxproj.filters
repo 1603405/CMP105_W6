@@ -36,7 +36,7 @@
     <ClCompile Include="Framework\GameObject.cpp">
       <Filter>Framework</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Games Programmin%27 -CMP105\Week 6\CMP105_W6\Week6\CMP105App\GravityObject.cpp">
+    <ClCompile Include="GravityObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -64,7 +64,7 @@
     <ClInclude Include="Framework\GameObject.h">
       <Filter>Framework</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Games Programmin%27 -CMP105\Week 6\CMP105_W6\Week6\CMP105App\GravityObject.h">
+    <ClInclude Include="GravityObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
